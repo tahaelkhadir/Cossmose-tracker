@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile of {{ profile.username }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Instagram Profile: {{ profile.username }}</h1>
+    <p>Full name: {{ profile.full_name }}</p>
+    <p>Followers: {{ profile.followers }}</p>
+    <p>Following: {{ profile.following }}</p>
+    <p>{{ profile.email }}</p>
+    <p>{{ profile.phone_number }}</p>
+    <p>Profile Picture URL: <a href="{{ profile.profile_pic_url }}" target="_blank">{{ profile.profile_pic_url }}</a></p>
+    <p>Profile Picture: <img src="{{ profile.profile_pic_url }}" alt="Profile Picture"></p>
+    <h2>Photos</h2>
+    <table>
+        <tr>
+            <th>Photo</th>
+            <th>Likes</th>
+            <th>Location</th>
+            <th>Publication Date</th>
+            <th>Tags</th>
+        </tr>
+        {% for photo in profile.photos %}
+        <tr>
+            <td><a href="{{ photo[0] }}" target="_blank"><img src="{{ photo[0] }}" alt="Instagram Photo" width="100"></a></td>
+            <td>{{ photo[1] }}</td>
+            <td>{{ photo[2] }}</td>
+            <td>{{ photo[3] }}</td>
+            <td>{{ photo[4] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image EXIF Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style4.css') }}">
+</head>
+<body>
+    <h1>EXIF Data</h1>
+    <ul>
+        {% for tag, value in exif_data.items() %}
+        <li>{{ tag }}: {{ value }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

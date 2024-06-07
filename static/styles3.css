@@ -1,0 +1,81 @@
+/* Reset */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #000;
+    color: #0f0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Heading */
+h1 {
+    color: #0f0;
+    margin-bottom: 20px;
+    font-size: clamp(1.5em, 4vw, 2.5em);
+    text-align: center;
+    text-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0;
+}
+
+/* Form */
+form {
+    margin-bottom: 30px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #0f0;
+    text-shadow: 0 0 10px #0f0;
+}
+
+input[type="text"], button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #0f0;
+    margin-top: 10px;
+    background-color: #000;
+    color: #0f0;
+    box-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0;
+}
+
+button {
+    background-color: #0f0;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #090;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #090, 0 0 30px #090, 0 0 45px #090;
+}
+
+/* Results */
+ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #0f0;
+}
+
+ul li a {
+    color: #0f0;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}

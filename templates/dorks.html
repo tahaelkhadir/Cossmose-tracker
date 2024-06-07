@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Dorks Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles3.css') }}">
+</head>
+<body>
+    <h1>Google Dorks Results</h1>
+    <ul>
+        {% for result in dorks %}
+            <li><a href="{{ result.link }}" target="_blank">{{ result.title }}</a></li>
+        {% endfor %}
+    </ul>
+    <a href="/dorks">New Search</a>
+</body>
+</html>

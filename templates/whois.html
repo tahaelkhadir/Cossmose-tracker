@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whois Information</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles2.css') }}">
+</head>
+<body>
+    <h1>Whois Information</h1>
+    {% if whois.error %}
+        <p>Error: {{ whois.error }}</p>
+    {% else %}
+        <ul>
+            <li><strong>Domain Name:</strong> {{ whois.domain_name }}</li>
+            <li><strong>Registrar:</strong> {{ whois.registrar }}</li>
+            <li><strong>WHOIS Server:</strong> {{ whois.whois_server }}</li>
+            <li><strong>Creation Date:</strong> {{ whois.creation_date }}</li>
+            <li><strong>Expiration Date:</strong> {{ whois.expiration_date }}</li>
+            <li><strong>Updated Date:</strong> {{ whois.updated_date }}</li>
+            <li><strong>Status:</strong> {{ whois.status }}</li>
+            <li><strong>Name Servers:</strong> {{ whois.name_servers }}</li>
+            <li><strong>Emails:</strong> {{ whois.emails }}</li>
+            <li><strong>Registrant Name:</strong> {{ whois.registrant_name }}</li>
+            <li><strong>Registrant Organization:</strong> {{ whois.registrant_organization }}</li>
+            <li><strong>Registrant Street:</strong> {{ whois.registrant_street }}</li>
+            <li><strong>Registrant City:</strong> {{ whois.registrant_city }}</li>
+            <li><strong>Registrant State:</strong> {{ whois.registrant_state }}</li>
+            <li><strong>Registrant Postal Code:</strong> {{ whois.registrant_postal_code }}</li>
+            <li><strong>Registrant Country:</strong> {{ whois.registrant_country }}</li>
+            <li><strong>Registrant Phone:</strong> {{ whois.registrant_phone }}</li>
+        </ul>
+    {% endif %}
+</body>
+</html>
