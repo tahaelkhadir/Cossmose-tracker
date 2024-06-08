@@ -41,4 +41,4 @@ Analyze image metadata to extract valuable information:
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/yourusername/cossmose-tracker.git
-   cd cosmose-tracker
+   cd cossmose-tracker
