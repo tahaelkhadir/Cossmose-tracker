@@ -1,6 +1,6 @@
-# Cosmose Tracker
+# Cossmose Tracker
 
-Cosmose Tracker is an advanced OSINT (Open Source Intelligence) and cybersecurity web application. It leverages tools like Instagram profile analysis, WHOIS domain lookup, Google Dorks search, and EXIF metadata analysis to provide detailed insights and raise awareness about digital footprints and cybersecurity practices.
+Cossmose Tracker is an advanced OSINT (Open Source Intelligence) and cybersecurity web application. It leverages tools like Instagram profile analysis, WHOIS domain lookup, Google Dorks search, and EXIF metadata analysis to provide detailed insights and raise awareness about digital footprints and cybersecurity practices.
 
 
 
@@ -40,5 +40,5 @@ Analyze image metadata to extract valuable information:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/cosmose-tracker.git
+   git clone https://github.com/yourusername/cossmose-tracker.git
    cd cosmose-tracker
